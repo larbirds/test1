@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('create', 'testController@create');
+
+Route::post('post', 'testController@store');
